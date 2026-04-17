@@ -3,7 +3,7 @@
 #include <time.h>
 #include <unistd.h>
 
-#define MAX_DROPS 400
+#define MAX_DROPS 800
 
 typedef struct {
     int x, y;
@@ -17,7 +17,7 @@ int main() {
     noecho();
     curs_set(0);
     start_color();
-    timeout(20); // Frame delay in ms
+    timeout(40); // Frame delay in ms
 
     // Define blue shades using 256-color palette (16-231 range)
     // init_pair(id, foreground, background)
@@ -26,7 +26,7 @@ int main() {
     init_pair(3, 19, 19);   // Blue
     init_pair(4, 20, 20);   // Lighter Blue
     init_pair(5, 21, 21);   // Bright Blue
-    init_pair(6, 33, 33);   // Electric Blue (Leading edge)
+    init_pair(5, 21, 21);   // Electric Blue (Leading edge)
 
     int max_y, max_x;
     getmaxyx(stdscr, max_y, max_x);
