@@ -22,13 +22,13 @@ int main() {
     // Define blue shades using 256-color palette (16-231 range)
     // init_pair(id, foreground, background)
     init_pair(1, 17, 17);
-    init_pair(2, 17, 17);   // Electric Blue (Leading edge)
-    init_pair(3, 18, 18);   // Darkest Blue
-    init_pair(4, 19, 19);   // Deep Blue
-    init_pair(5, 20, 20);   // Blue
-    init_pair(6, 21, 21);   // Lighter Blue
-    init_pair(7, 51, 51);   // Bright Blue
-
+    init_pair(2, 18, 18);   // Electric Blue (Leading edge)
+    init_pair(3, 19, 19);   // Darkest Blue
+    init_pair(4, 20, 20);   // Deep Blue
+    init_pair(5, 21, 21);   // Blue
+    init_pair(6, 27, 27);   // Lighter Blue
+    init_pair(7, 33, 33);   // Lighter Blue
+    init_pair(8, 75, 75);   // Lighter Blue    
     wbkgd(stdscr, COLOR_PAIR(1));
     int max_y, max_x;
     getmaxyx(stdscr, max_y, max_x);
@@ -54,7 +54,7 @@ int main() {
                 
                 if (curr_y >= 0 && curr_y < max_y) {
                     // Create shading/shadow effect based on position in trail
-                    int color = 6 - (l * 6 / drops[i].length);
+                    int color = 8 - (l * 8 / drops[i].length);
                     if (color < 1) color = 1;
                     
                     attron(COLOR_PAIR(color));
