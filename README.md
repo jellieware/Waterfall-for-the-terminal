@@ -2,7 +2,7 @@
 Waterfall animation for the terminal
 <br><br>
 
-<img width="720" height="1600" alt="1001093329" src="https://github.com/user-attachments/assets/da3a511e-d641-4f9f-b2ae-829e90d9f863" />
+<img width="800" height="450" alt="1001093346" src="https://github.com/user-attachments/assets/f85fb535-c42e-4562-b0c4-7b1f7a494179" />
 
 
 <br><br>
